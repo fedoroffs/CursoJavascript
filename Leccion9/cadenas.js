@@ -1,4 +1,4 @@
-/*Este programa verfica si la contraseña es una clave válida*/ 
+/*Este programa verifica si la contraseña es una clave válida*/ 
 
 /*La función chequea si la clave tiene al menos 8 caracteres*/ 
 

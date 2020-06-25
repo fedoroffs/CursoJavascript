@@ -1,7 +1,7 @@
 /*Este programa verifica si la contraseña es una clave válida*/ 
 
 /*La función chequea si la clave tiene al menos 8 caracteres*/ 
-
+/*
 function tieneOchoCaracteres(clave){
     if (clave.length < 8){
         return false;
@@ -9,7 +9,7 @@ function tieneOchoCaracteres(clave){
     return true;
 }
 
-/*La función chequea si la clave tiene espacios vacios*/
+
 
 function noTieneEspacio (clave){
     let claveSinEspacio = clave.replace(" ", "");
@@ -20,7 +20,7 @@ function noTieneEspacio (clave){
 }
 
 
-/*La función chequea si la clave tiene hay al menos dos digitos */
+
 
 function tieneDigitos(clave){
     cuantosDigitos = 0;
@@ -35,7 +35,7 @@ function tieneDigitos(clave){
     return false;
 }
 
-/*La función chequea si la clave tiene al menos una MAYUSCULA*/
+
 
 
 function tieneMayuscula(clave) {
@@ -49,7 +49,7 @@ function tieneMayuscula(clave) {
 }
 
 
-/*La función chequea si la clave tiene los siguientes caracteres especiales "!@#$"*/
+
 
 function tieneCaracterEspecial(clave){
     for (var i =0; i< clave.length; i++){
@@ -60,19 +60,29 @@ function tieneCaracterEspecial(clave){
  return false;
 }
 
-/*La función chequea si la clave tiene todos los requesitos*/
+
 
 function chequeaClave (clave){
     var mensaje = " ";
     if (tieneOchoCaracteres(clave) && noTieneEspacio(clave) && tieneDigitos(clave) 
     && tieneDigitos(clave) && tieneCaracterEspecial(clave) && tieneMayuscula(clave)){
-        mensaje = "Buen Trabajo, su contraseña satisface todos los requesitos";
+        mensaje = "Buen Trabajo, su contraseña cumple todos los requisitos";
     } else {
-        mensaje = "Su contraseña no tiene los requesitos necesarios";
+        mensaje = "Su contraseña no tiene los requisitos necesarios";
     }
     return mensaje;
 
 }
 
 console.log(chequeaClave("passworD2012@"));
+console.log(chequeaClave("password"));
+console.log(chequeaClave("pas23sword"));
+console.log(chequeaClave("pas23Sword"));
+console.log(chequeaClave("pas23 Sword"));
+
+
+
+
+*/
+
 

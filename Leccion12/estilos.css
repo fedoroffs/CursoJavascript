@@ -1,0 +1,19 @@
+#contenedor {  
+  padding: 50px;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none; 
+}
+
+img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;    
+}
+
+#espacio{	
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
